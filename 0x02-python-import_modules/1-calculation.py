@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-if __namee__ == "__main__":
+if __name__ == "__main__":
     """ Simple calculator that does quick mathematic operations """
     from calculator_1 import add, mul, sub, div
 
