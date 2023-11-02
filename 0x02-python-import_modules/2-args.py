@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+
+if __namee__ == "__main__":
+    """Print the number and list of args"""
+    import sys
+
+    if len(sys.argv) == 1:
+        print("0 args")
+    elif len(sys.argv) == 2:
+        print("1 arg:")
+    else:
+        print("{} args".format(len(sys.argv) - 1))
+    for i in range(len(sys.argv) - 1):
+        print("{}: {}".format(i + 1, sys.argv[i + 1]))
