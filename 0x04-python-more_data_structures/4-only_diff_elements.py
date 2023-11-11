@@ -2,10 +2,10 @@
 
 def only_diff_elements(set_1, set_2):
     d = []
-    for X in set_1:
-        if X not in set_2:
+    for i in set_1:
+        if i not in set_2:
             d.append(i)
-    for X in set_2:
-        if X not in set_1:
-            d.append(X)
+    for j in set_2:
+        if j not in set_1:
+            d.append(j)
     return d
