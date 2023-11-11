@@ -48,7 +48,7 @@ void print_python_bytes(PyObject *p)
  *
  * @p: py Obj
  *
- * Return: Nothing
+ * Return: Nothng
 */
 
 void print_python_list(PyObject *p)
