@@ -39,7 +39,8 @@ void print_python_bytes(PyObject *p)
 	Py_ssize_t sz, x;
 	char *str = NULL;
 
-	sz = 0:
+	sz = 0;
+	x = 0;
 	fflush(stdout);
 	printf("[.] bytes object info\n");
 	if (!PyBytes_CheckExact(p))
@@ -52,7 +53,6 @@ void print_python_bytes(PyObject *p)
 	str = (assert(PyBytes_Check(p)), (((PyBytesObject *)(p))->ob_sval));
 	printf("  trying string: %s\n", str);
 	printf("  first %zd bytes:", sz < 10 ? sz + 1 : 10);
-	x = 0;
 	while (x < sz + 1 && x < 10)
 	{
 		printf(" %02hhx", str[x]);
