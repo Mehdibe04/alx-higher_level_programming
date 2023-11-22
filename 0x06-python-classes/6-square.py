@@ -3,12 +3,13 @@
 
 
 class Square():
+    """ the class square """
     def __init__(self, size=0, position=(0, 0)):
-        """Initialize a nw square.
+        """Initialize a new square.
 
         Args:
-            size (int): d sz of d new square.
-            position (int, int): The pos of d new square.
+            size (int): The sihe new square.
+            position (int, int): The  new square.
         """
         self.size = size
         self.position = position
@@ -20,9 +21,9 @@ class Square():
     @size.setter
     def size(self, value):
         if type(value) != int:
-            raise TypeError("sz must be an int")
+            raise TypeError("size must beteger")
         elif value < 0:
-            raise ValueError("sz must be >= 0")
+            raise ValueError("size must be >= 0")
         else:
             self.__size = value
 
@@ -36,7 +37,7 @@ class Square():
                 len(value) != 2 or
                 not all(isinstance(num, int) for num in value) or
                 not all(num >= 0 for num in value)):
-            raise TypeError("pos must be a tuple of 2 postv int")
+            raise TypeError("positiouple of 2 positive integers")
         self.__position = value
 
     def area(self):
