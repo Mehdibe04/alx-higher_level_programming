@@ -1,5 +1,13 @@
 #!/usr/bin/python3
-"""Defines a locked class."""
+"""
+    101-locked_class: class LockedClass
+"""
+
 
 class LockedClass:
-    __slots__ = ["first_name"]
+    """
+        A class that can  have ONLY one attribute first_name
+        Attribute:
+             first_name (str): name
+    """
+    __slots__ = ['first_name']
