@@ -12,11 +12,11 @@ class Student:
 
     def to_json(self, attrs=None):
         """that retrieves a dictionary representation"""
-        if att is None:
+        if attrs is None:
             return self.__dict__
         else:
-            my_dictio = {}
-            for x in att:
+            my_dct = {}
+            for x in attrs:
                 if hasattr(self, x):
-                    my_dictio[x] = getattr(self, x)
-            return my_dictio
+                    my_dct[x] = getattr(self, x)
+            return my_dct
